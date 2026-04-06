@@ -9,7 +9,7 @@ import os
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
-FICHIER_EXCEL = "Suivi Candidatures Alternance CNAM Reims.xlsx"
+FICHIER_EXCEL = "Suivi Candidatures Alternance.xlsx"
 COLONNES = ["Entreprise", "Contact", "Poste", "Canal", "Date envoi", "Statut", "Notes", "Ville", "Priorité"]
 CANAUX = ["LinkedIn", "Email", "Site web"]
 STATUTS = ["En attente", "✅ Réponse", "❌", "Relancé", "Entretien"]
@@ -145,7 +145,7 @@ class Formulaire(ctk.CTkToplevel):
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("📋 Suivi Candidatures Alternance – CNAM Reims")
+        self.title("📋 Suivi Candidatures Alternance")
         self.geometry("1300x700")
         init_excel()
         self.build_ui()
@@ -155,7 +155,7 @@ class App(ctk.CTk):
         # Header
         header = ctk.CTkFrame(self, height=60, corner_radius=0)
         header.pack(fill="x")
-        ctk.CTkLabel(header, text="📋 Suivi Candidatures Alternance – CNAM Reims",
+        ctk.CTkLabel(header, text="📋 Suivi Candidatures Alternance",
                      font=ctk.CTkFont(size=18, weight="bold")).pack(side="left", padx=20, pady=10)
         ctk.CTkButton(header, text="➕ Ajouter", command=self.ajouter, width=130).pack(side="right", padx=10, pady=10)
         ctk.CTkButton(header, text="🔄 Actualiser", command=self.charger, width=130, fg_color="gray").pack(side="right", padx=5, pady=10)
