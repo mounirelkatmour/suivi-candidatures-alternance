@@ -41,7 +41,7 @@ python main.py
 📁 Suivi d'alternance/
 ├── main.py                                          # Code source
 ├── Suivi Alternance.exe                             # Exécutable Windows
-├── Suivi Candidatures Alternance.xlsx    # Données (créé automatiquement)
+├── Suivi Candidatures Alternance.xlsx               # Données (créé automatiquement)
 └── README.md
 ```
 
