@@ -20,7 +20,7 @@ Une application desktop locale pour gérer et suivre ses candidatures d'alternan
 ### Windows
 Double-cliquez simplement sur **`Suivi Alternance.exe`**
 
-> ⚠️ Le fichier Excel `Suivi Candidatures Alternance CNAM Reims.xlsx` sera créé automatiquement dans le même dossier au premier lancement.
+> ⚠️ Le fichier Excel `Suivi Candidatures Alternance.xlsx` sera créé automatiquement dans le même dossier au premier lancement.
 
 ### Mac / Linux
 **1. Installer les dépendances :**
@@ -41,7 +41,7 @@ python main.py
 📁 Suivi d'alternance/
 ├── main.py                                          # Code source
 ├── Suivi Alternance.exe                             # Exécutable Windows
-├── Suivi Candidatures Alternance CNAM Reims.xlsx    # Données (créé automatiquement)
+├── Suivi Candidatures Alternance.xlsx    # Données (créé automatiquement)
 └── README.md
 ```
 
