@@ -1,35 +1,38 @@
 # 📋 Suivi Candidatures Alternance
 
-Une application desktop locale pour gérer et suivre ses candidatures d'alternance, avec sauvegarde automatique dans un fichier Excel.
+Application desktop locale pour gérer et suivre ses candidatures d'alternance, avec sauvegarde automatique dans un fichier Excel.
 
 ---
 
 ## ✨ Fonctionnalités
 
-- 📊 Tableau de suivi avec code couleur par statut
-- ➕ Ajouter une candidature via un formulaire
-- ✏️ Modifier une candidature existante
-- 🗑️ Supprimer une candidature
-- 💾 Sauvegarde automatique dans un fichier Excel
-- 📈 Statistiques en temps réel (total, en attente, réponses, refus)
+- Tableau de suivi avec code couleur par statut
+- Ajout, modification et suppression de candidatures
+- Sauvegarde automatique dans un fichier Excel
+- Statistiques et graphiques intégrés
+- Export de rapport hebdomadaire
 
 ---
 
-## 🚀 Lancement
+## 🚀 Lancement rapide
 
 ### Windows
-Double-cliquez simplement sur **`Suivi Alternance.exe`**
-
-> ⚠️ Le fichier Excel `Suivi Candidatures Alternance.xlsx` sera créé automatiquement dans le même dossier au premier lancement.
-
-### Mac / Linux
-**1. Installer les dépendances :**
+1. Installer Python 3 si besoin.
+2. Ouvrir un terminal dans le dossier du projet.
+3. Installer les dépendances :
 ```bash
-pip install customtkinter openpyxl
+pip install -r requirements.txt
+```
+4. Lancer l'application :
+```bash
+python main.py
 ```
 
-**2. Lancer l'application :**
+Tu peux aussi double-cliquer sur `run.bat`.
+
+### Linux / macOS
 ```bash
+pip install -r requirements.txt
 python main.py
 ```
 
@@ -37,12 +40,21 @@ python main.py
 
 ## 🗂️ Structure du projet
 
-```
+```text
 📁 Suivi d'alternance/
-├── main.py                                          # Code source
-├── Suivi Alternance.exe                             # Exécutable Windows
-├── Suivi Candidatures Alternance.xlsx               # Données (créé automatiquement)
-└── README.md
+├── main.py                 # Lanceur principal
+├── run.bat                 # Lancement rapide Windows
+├── requirements.txt        # Dépendances Python
+├── app/                    # Code modulaire de l'application
+│   ├── __init__.py
+│   ├── core.py
+│   ├── dialogs.py
+│   ├── ui.py
+│   ├── charts.py
+│   └── legacy.py
+├── data/                   # Fichiers Excel / JSON créés automatiquement
+├── README.md
+└── Suivi Alternance.exe    # Version exécutable optionnelle
 ```
 
 ---
@@ -66,9 +78,9 @@ python main.py
 ## 🛠️ Technologies
 
 - Python 3
-- CustomTkinter — interface graphique moderne
-- openpyxl — lecture/écriture Excel
-- PyInstaller — génération du .exe
+- CustomTkinter
+- openpyxl
+- matplotlib
 
 ---
 
